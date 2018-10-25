@@ -1,0 +1,10 @@
+*
+!train_folds.csv
+!mean_hist.npy
+!train_folds_148.csv
+!mosaic/
+!mosaic/pazzles_6013.csv
+!mosaic/id2pred_fold.json
+!train_folds_148_mos_emb_1.csv
+!.gitignore
+!README.md
