@@ -1,6 +1,6 @@
 # Argus solution TGS Salt Identification Challenge
 
-Source code of the 14th place solution by Argus team ([Ruslan Baikulov](https://www.kaggle.com/romul0212), [Nikolay Falaleev](https://www.kaggle.com/nikolasent)).
+Source code of 14th place solution for [TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge) by Argus team ([Ruslan Baikulov](https://www.kaggle.com/romul0212), [Nikolay Falaleev](https://www.kaggle.com/nikolasent)).
 
 
 ## Solution 
@@ -91,7 +91,6 @@ The provided dockerfile is supplied to build image with cuda support and cudnn.
 ```bash
 cd docker
 ./run.sh
-./run_pipeline.sh
 ```
 * Start full pipeline with postprocessing 
 ```bash
