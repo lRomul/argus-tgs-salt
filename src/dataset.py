@@ -22,7 +22,11 @@ def get_samples(train_folds_path, folds):
             continue
 
         image = cv2.imread(row.image_path, cv2.IMREAD_GRAYSCALE)
+        if image is None:
+            raise FileNotFoundError(f"Image not found {row.image_path}")
         mask = cv2.imread(row.mask_path, cv2.IMREAD_GRAYSCALE)
+        if mask is None:
+            raise FileNotFoundError(f"Mask not found {row.mask_path}")
         images_lst.append(image)
         target_lst.append(mask)
         depth_lst.append(row.z)

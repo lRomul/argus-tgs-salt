@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # make biharmonic inpaint
 python make_inpaint_images.py
