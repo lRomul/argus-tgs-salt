@@ -62,8 +62,8 @@ The provided dockerfile is supplied to build image with cuda support and cudnn.
 * Clone the repo, build docker image. 
     ```bash
     git clone https://github.com/lRomul/argus-tgs-salt.git
-    cd argus-tgs-salt/docker 
-    ./build.sh
+    cd argus-tgs-salt
+    make build
     ```
 
 * Download and extract [dataset](https://www.kaggle.com/c/tgs-salt-identification-challenge/data)
@@ -89,9 +89,9 @@ The provided dockerfile is supplied to build image with cuda support and cudnn.
 
 * Run docker container 
 ```bash
-cd docker
-./run.sh
+make run
 ```
+
 * Start full pipeline with postprocessing 
 ```bash
 ./run_pipeline.sh
